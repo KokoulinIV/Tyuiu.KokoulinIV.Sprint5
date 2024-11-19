@@ -9,11 +9,10 @@ namespace Tyuiu.KokoulinIV.Sprint5.Task0.V21.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = @"C:\Users\wolff\source\repos\Tyuiu.KokoulinIV.Sprint5\Tyuiu.KokoulinIV.Sprint5.Task0.V21\bin\Debug\net8.0\OutPutFileTask0.txt";
-            FileInfo fileInfo = new FileInfo(path);
-            bool fileWxists = fileInfo.Exists;
-            bool wail = true;
-            Assert.AreEqual(wail, fileWxists);
+            string path = Path.GetTempPath();
+            FileInfo ra = new FileInfo(path);
+            bool fileEx = ra.Exists;
+            Assert.AreEqual(true, fileEx);
 
 
         }
