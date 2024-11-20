@@ -19,7 +19,7 @@ namespace Tyuiu.KokoulinIV.Sprint5.Task1.V19.Lib
             string str;
             for (int x = startValue; x <= stopValue; x++)
             {
-                y = Math.Sin(x)+ 2/(3*x+0.5)-x*Math.Cos(x)*2*x;
+                y = Math.Sin(x)+ (2/(3*x+0.5))-2*Math.Cos(x)*2*x;
                 y = Math.Round(y, 2);
                 if (3 * x + 0.5 == 0)
                 {
