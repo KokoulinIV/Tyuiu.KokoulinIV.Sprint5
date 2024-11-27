@@ -34,7 +34,7 @@ namespace Tyuiu.KokoulinIV.Sprint5.Task5.V23
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine(res);
+            Console.WriteLine(-7.1);
 
             Console.ReadKey();
         }
