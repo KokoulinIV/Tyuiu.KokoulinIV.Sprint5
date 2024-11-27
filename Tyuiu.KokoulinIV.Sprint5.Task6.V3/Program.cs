@@ -1,14 +1,13 @@
-﻿using Tyuiu.KokoulinIV.Sprint5.Task5.V23.Lib;
+﻿using Tyuiu.KokoulinIV.Sprint5.Task6.V3.Lib;
 using System.IO;
-namespace Tyuiu.KokoulinIV.Sprint5.Task5.V23
+namespace Tyuiu.KokoulinIV.Sprint5.Task6.V3
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-
-            string str = "C:\\Users\\wolff\\source\\repos\\Tyuiu.KokoulinIV.Sprint5\\InPutDataFileTask5V23.txt.txt";
+            string str = "C:\\Users\\wolff\\source\\repos\\Tyuiu.KokoulinIV.Sprint5\\InPutDataFileTask6V3.txt.txt";
             Console.Title = "Спринт #5 | Выполнил Кокоулин И. В. | ИБКСб-24-1";
 
             Console.WriteLine("***************************************************************************");
