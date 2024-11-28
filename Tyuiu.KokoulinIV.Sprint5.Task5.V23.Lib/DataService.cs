@@ -8,23 +8,22 @@ namespace Tyuiu.KokoulinIV.Sprint5.Task5.V23.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            double minValue = double.MaxValue;
-            string str = File.ReadAllText(path);
-            string[] strings = str.Split(' ');
-            List<string> odd= new List<string>();
-            foreach (string s in strings)
+            double min = double.MaxValue;
+            using (StreamReader reader = new StreamReader(path))
             {
-                if( double.TryParse(s,out double number))
+                string line;
+                while ((line = reader.ReadLine()) != null)
                 {
-                    if(number < minValue)
+                    line = line.Replace(".", ",");
+                    string[] num = line.Split(' ');
+                    foreach (string s in num)
                     {
-                        minValue = number;
+                        double d = double.Parse(s);
+                        if ((d != Math.Round(d)) && (d < min)) min = d;
                     }
                 }
             }
-
-            
-            return minValue;
+            return Math.Round(min, 3);
         }
     }
 }
